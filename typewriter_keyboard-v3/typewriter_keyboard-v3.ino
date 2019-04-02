@@ -42,6 +42,7 @@ void loop() {
     }
 
     handle_press(input, muxOut);
+    delay(1);
   }
 }
 
@@ -120,5 +121,3 @@ uint8_t decode_input()
   input += (digitalRead(tw_0) == HIGH ? 1 : 0);
   return input_table[input];
 }
-
-
